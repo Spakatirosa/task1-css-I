@@ -1,0 +1,15 @@
+ChartGPT:
+-Definition: The definition accurately describes CSS selectors and their function in styling HTML elements.
+-Types: All the common types of CSS selectors (element, class, ID, attribute, pseudo-class) are explained 
+ with brief descriptions.
+-Example: The HTML code demonstrates different selector types in action, and the corresponding CSS rules
+ clearly explain how they target specific elements.
+-Explanation: The explanation of each selector's effect is well-written and easy to understand.
+
+Gemini:
+-Clear Definition: You accurately defined CSS selectors and their role in applying styles to HTML elements.
+-Comprehensive Types: You listed all the common types of CSS selectors (element, class, ID, attribute, 
+ and pseudo-class) with brief explanations.
+-Detailed Example: You provided a well-structured HTML document that demonstrated different selector types 
+ in action. The corresponding CSS rules clearly explained their effects.
+-Concise Explanation: You effectively explained how each selector targeted specific elements in the example HTML.
