@@ -1,0 +1,52 @@
+Styling Text and Fonts with CSS
+CSS provides a wide range of properties for customizing the appearance of text, including fonts, size, weight, color, and alignment.
+
+Common Text Properties
+font-family: Specifies the font to be used.
+font-size: Sets the size of the text.
+font-weight: Defines the boldness of the text (e.g., normal, bold, lighter, bolder).
+text-align: Specifies the alignment of the text within its container (e.g., left, center, right, justify).
+color: Sets the color of the text.
+text-decoration: Applies decorations to the text (e.g., underline, line-through).
+Example HTML and CSS
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Styling Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is a Heading</h1>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph with <a href="#">a link</a>.</p>
+</body>
+</html>
+Use code with caution.
+
+Explanation
+The body selector sets the default font family for the entire page.
+The h1 selector styles the heading with a larger font size, bold weight, and center alignment.
+The p selector styles paragraphs with a specific font size and line height.
+The a selector styles links with a blue color and an underline.
+By combining these properties, you can create a wide range of text styles to match your design requirements.
