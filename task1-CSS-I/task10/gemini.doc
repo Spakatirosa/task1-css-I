@@ -1,0 +1,50 @@
+CSS Box Model and Its Components
+The CSS box model is a conceptual representation of how elements are rendered on a web page. It consists of four main components:
+
+Content: The actual content of the element, such as text or images.
+Padding: The space between the content and the border.
+Border: The outline surrounding the content and padding.
+Margin: The space outside the border, separating the element from other elements.
+Understanding the Box Model
+Opens in a new window
+washington.edu
+CSS box model diagram
+The total width of an element is calculated as follows:
+
+Total width = width + padding-left + padding-right + border-left-width + border-right-width + margin-left + margin-right
+Similarly, the total height is calculated using the same formula with height, padding-top, padding-bottom, border-top-width, border-bottom-width, margin-top, and margin-bottom.
+
+Example HTML and CSS
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Box Model Example</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      border: 2px solid black;
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">This is a box</div>
+</body>
+</html>
+Use code with caution.
+
+Visual Examples
+[Image showing the effect of changing padding on the box]
+[Image showing the effect of changing margin on the box]
+[Image showing the effect of changing border on the box]
+
+Explanation
+The .box class styles the div element with a width, height, border, padding, and margin.
+The width and height properties set the dimensions of the content area.
+The border property adds a border around the content and padding.
+The padding property creates space between the content and the border.
+The margin property creates space between the border and other elements.
+By understanding the box model and its components, you can effectively control the layout and spacing of elements on your web pages.
