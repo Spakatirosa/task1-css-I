@@ -1,0 +1,47 @@
+Cascading Style Sheets (CSS) is a style sheet language 
+used for specifying the presentation and styling of a document written 
+in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). 
+CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello, world!</h1>
+    <p>This is a paragraph of text.</p>
+</body>
+</html>
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: red;
+    font-size: 36px;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+<!DOCTYPE html>: This declaration defines the document type and version of HTML. It tells the browser to render the page in standards mode.
+
+<html>: This is the root element of the HTML document.
+
+<head>: Contains meta-information about the document, including the title and links to stylesheets.
+
+<title>: Sets the title of the web page, which appears in the browser tab.
+
+<link rel="stylesheet" href="style.css">: This line links to an external CSS file named style.css. The rel attribute specifies the relationship (stylesheet), and the href attribute specifies the path to the CSS file.
+
+<body>: Contains the content of the web page that will be visible to users.
+
+<h1>: This is a heading element. Here, it contains the text "Hello, world!".
+
+<p>: This is a paragraph element containing some text.
+
+  
