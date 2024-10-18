@@ -1,0 +1,78 @@
+CSS selectors are patterns used to select and style specific HTML elements. They allow you to apply styles to elements based on their tag names, classes, IDs, attributes, and states. Selectors work by targeting elements in the HTML document that match the selector pattern, applying the defined styles to those elements.
+
+Example HTML Document with Various Selectors
+Here’s an HTML document that demonstrates different types of selectors, along with CSS rules for each:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Element Selector */
+        p {
+            color: darkblue;
+            font-size: 18px;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #special {
+            color: red;
+            text-transform: uppercase;
+        }
+
+        /* Attribute Selector */
+        a[target="_blank"] {
+            color: purple;
+            text-decoration: underline;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors Example</h1>
+
+    <!-- Element Selector -->
+    <p>This paragraph is styled using an element selector.</p>
+
+    <!-- Class Selector -->
+    <p class="highlight">This paragraph is styled using a class selector.</p>
+
+    <!-- ID Selector -->
+    <p id="special">This paragraph is styled using an ID selector.</p>
+
+    <!-- Attribute Selector -->
+    <a href="https://example.com" target="_blank">Link that opens in a new tab</a>
+    <br>
+    <a href="https://example.com">Link that opens in the same tab</a>
+
+    <!-- Pseudo-class Selector -->
+    <p>Hover over this <a href="#">link</a> to see the pseudo-class effect.</p>
+</body>
+</html>
+Explanation of Selectors
+    Element Selector (p):
+        -Targets all <p> tags and applies dark blue text color and an 18px font size.
+Class Selector (.highlight):
+        -Targets all elements with the highlight class, applying a yellow background and bold font weight.
+        -Used on a specific <p> tag with class="highlight".
+ID Selector (#special):
+        -Targets the element with the specific id="special", making text red and uppercase.
+        -Unique to the element with that ID, ensuring a specific style for one element.
+Attribute Selector (a[target="_blank"]):
+        -Targets all <a> elements with target="_blank", coloring them purple and adding an underline.
+        -Useful for selecting elements based on attributes.
+Pseudo-class Selector (a:hover):
+        -Targets <a> elements when they are hovered over, changing their color to orange.
+        -Applies only when the element is in a specific state, enhancing interactivity.
