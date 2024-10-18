@@ -1,0 +1,67 @@
+Understanding CSS Selectors
+CSS selectors are used to target specific HTML elements to which styles can be applied.
+They act as a way to identify and address elements based on their various characteristics.
+
+Types of CSS
+1.Element Selector: Targets elements based on their tag name.
+    -Example: h1 targets all <h1> elements.
+2.Class Selector: Targets elements based on their class attribute.
+    -Example: .special targets all elements with the class attribute "special".
+3.ID Selector: Targets a single element based on its ID attribute.
+    -Example: #myElement targets the element with the ID "myElement".
+4.Attribute Selector: Targets elements based on their attributes.
+    +Examples:
+    -[href] targets all elements with an href attribute.
+    -[type="button"] targets all elements with the type attribute set to "button".
+5.Pseudo-Class Selector: Targets elements based on their state or condition.
+    +Examples:
+    -:hover targets an element when the mouse hovers over it.
+    -:active targets an element when it is clicked.
+
+Example HTML Document
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <p class="paragraph">This is a paragraph.</p>
+    <div id="myDiv">
+        <a href="https://example.com">Link</a>
+        <button type="button">Button</button>
+    </div>
+</body>
+</html>
+
+
+-CSS Rules
+
+h1 {
+    color: blue;
+}
+
+.paragraph {
+    font-size: 18px;
+}
+
+#myDiv {
+    background-color: lightgray;
+}
+
+a[href] {
+    text-decoration: underline;
+}
+
+button[type="button"]:hover {
+    background-color: #f0f0f0;
+}
+Explanation of Targeting
++ h1: Targets the <h1> element and applies a blue color.
++ .paragraph: Targets the element with the class "paragraph" and sets its font size to 18px.
++ #myDiv: Targets the element with the ID "myDiv" and sets its background color to light gray.
++ a[href]: Targets all elements with an href attribute and underlines the text.
++ button[type="button"]:hover: Targets the button element when the mouse hovers over it and
+  changes its background color.
