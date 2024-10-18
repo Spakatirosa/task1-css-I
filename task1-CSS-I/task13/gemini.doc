@@ -1,0 +1,48 @@
+CSS Variables (Custom Properties)
+CSS variables (also known as custom properties) are a powerful feature introduced in CSS3 that allows you to define and reuse values throughout your stylesheet. This enhances maintainability, consistency, and flexibility in your design.
+
+How CSS Variables Work
+Define Variables: Use the -- prefix to define a variable. For example, --primary-color: #007bff;.
+Reference Variables: Use the var() function to reference a variable in your CSS properties. For example, color: var(--primary-color);.
+Example Using CSS Variables
+CSS
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --font-family: Arial, sans-serif;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--font-family);   
+
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text {
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+Use code with caution.
+
+Changing Variable Values and Effects
+To change the value of a CSS variable, simply redefine it in the :root selector or in a specific scope. This will automatically update all elements that reference the variable.
+
+CSS
+:root {
+  --primary-color: #ff0000; /* Change to red */
+}
+Use code with caution.
+
+In this example, all elements that use var(--primary-color) will now have a red background.
+
+Benefits of Using CSS Variables
+Improved Maintainability: Centralized variable definitions make it easier to update styles across your project.
+Enhanced Consistency: Using variables ensures that the same values are used consistently throughout your stylesheet.
+Increased Flexibility: You can easily customize the appearance of your website by changing variable values.
+Theme Support: CSS variables are well-suited for creating themeable designs, where different color schemes or typography can be applied by changing variable values.
+By effectively utilizing CSS variables, you can create more maintainable, consistent, and flexible stylesheets for your web projects.
