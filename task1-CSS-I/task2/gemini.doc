@@ -1,0 +1,86 @@
+Inline CSS is a method of applying styles directly to individual HTML elements by using the style attribute within the element's tag. This allows you to define CSS rules that apply only to that specific element, overriding any styles defined in external or internal stylesheets.
+
+Example
+  <p style="color: red; font-size: 16px;">This text is red and 16 pixels in size.</p>
+
+  Advantages of Inline CSS:
+  Inline takes precedence over all other styles. ...
+You can quickly and easily insert CSS rules into an HTML page, which is useful for testing or previewing changes and performing quick fixes on your website.
+There is no need to create an additional file.
+  Disadvantages of Inline CSS
+Each HTML file must have a separate style section with the same CSS code when different pages need the same style. This repetition not only increases the overall size of the website but also complicates maintenance since any changes to the styles must be done manually in every file.
+  Internal CSS is a form of CSS using which you can add CSS to HTML documents. It helps to design the layout of a single HTML web page and change the styles of a web page within HTML code.
+
+  Example:
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal CSS</title>
+    <style>
+        h1 {
+            color: blue;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+</body>
+</html>
+
+Advantages:
+-Applies styles to multiple elements within the same HTML document.
+-Provides a better separation of content and style than inline CSS.
+Disadvantages:
+
+-Styles are limited to the specific HTML document.
+-Not suitable for large or complex stylesheets.
+
+External CSS
+Definition:
+External CSS is defined in a separate .css file and linked to the HTML document using the <link> tag.
+
+Example:
+index.html:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello, world!</h1>
+</body>
+</html>
+style.css:
+
+CSS
+h1 {
+    color: green;
+    font-size: 18px;
+}
+
+Advantages:
+-Separates content and style completely, improving code organization and maintainability.
+-Reusable stylesheets can be linked to multiple HTML documents.
+-Ideal for large or complex stylesheets.
+Disadvantages:
+-Requires an additional HTTP request to load the CSS file.
+-May slightly impact page load time.
+
+Demonstration HTML Page
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Styles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: red; font-size: 36px;">Inline CSS</h1>
+    <h2 style="color: blue; font-size: 24px;">Internal CSS</h2>
+    <h1>External CSS</h1>
+</body>
+</html>
